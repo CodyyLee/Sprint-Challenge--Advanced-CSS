@@ -1,0 +1,40 @@
+
+.sign-in {
+    .display-flex(row, center, center);
+    h2  {
+      width: 90%;
+      margin: 10px 0 0;
+    }
+  }
+
+.container-signin {
+    .display-flex(column, center, center);
+    
+    img {
+        max-width: 100%;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .signin-form {
+        .display-flex(column, center, center);
+        background-color: @wild-sand;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px;
+
+        label {
+            padding: 5px;
+            font-size: 1.8rem;
+        }
+
+        input {
+            padding: 5px;
+        }
+
+        .btn {
+            .btn-styles(@btn-bg-color, white);
+            margin: 10px;
+        }
+    }
+}
