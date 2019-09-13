@@ -12,11 +12,19 @@
     nav {
         .display-flex(row, space-evenly, center);
         width: 50%;
+
+        @media @mobile {
+            width: 100%;
+        }
         
         a {
             text-decoration: none;
             color: black;
             font-size: 1.6rem;
+
+            @media @mobile {
+                font-size: 1.4rem;
+            }
         }
     }
 }

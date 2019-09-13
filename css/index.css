@@ -136,6 +136,7 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
+  min-width: 100vw;
 }
 h1,
 h2,
@@ -180,10 +181,20 @@ p {
   align-items: center;
   width: 50%;
 }
+@media (max-width: 500px) {
+  .navigation nav {
+    width: 100%;
+  }
+}
 .navigation nav a {
   text-decoration: none;
   color: black;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .navigation nav a {
+    font-size: 1.4rem;
+  }
 }
 footer {
   color: #22283B;
@@ -197,6 +208,12 @@ footer {
 }
 .home .intro img {
   border-radius: 20px;
+  max-width: 100%;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    border-radius: 10px;
+  }
 }
 .home .intro h2 {
   padding: 15px;
@@ -215,6 +232,17 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -231,14 +259,58 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    min-width: 92%;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img img {
+    width: 100%;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 90%;
+    margin: auto;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn button {
+  background-color: #22283a;
+  padding: 10px 20px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.home .walk .walk-text .btn button:hover {
+  background-color: white;
+  padding: 10px 20px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: #22283a;
 }
 .home .walk .walk-img {
   width: 46%;
