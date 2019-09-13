@@ -136,7 +136,6 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
-  min-width: 100vw;
 }
 h1,
 h2,
@@ -205,6 +204,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  bottom: 0;
 }
 .home .intro img {
   border-radius: 20px;
@@ -337,10 +338,27 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 1100px) {
+  .container-signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+  }
+}
 .container-signin img {
   max-width: 100%;
   width: 90%;
   margin: 10px auto;
+  border-radius: 5px;
+}
+@media (min-width: 1100px) {
+  .container-signin img {
+    width: 98%;
+    margin: 0;
+    height: 50vh;
+  }
 }
 .container-signin .signin-form {
   display: flex;

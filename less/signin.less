@@ -9,11 +9,23 @@
 
 .container-signin {
     .display-flex(column, center, center);
+
+    @media @desktop {
+        .display-flex(column, space-evenly, center);
+        min-height: 100vh;
+    }
     
     img {
         max-width: 100%;
         width: 90%;
         margin: 10px auto;
+        border-radius: 5px;
+
+        @media @desktop {
+            width: 98%;
+            margin: 0;
+            height: 50vh;
+        }
     }
 
     .signin-form {
