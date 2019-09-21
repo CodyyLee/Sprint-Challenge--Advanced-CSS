@@ -1,1 +1,23 @@
 // Mixins Here
+
+//display flex mixin
+.display-flex(@dir, @justify, @align)   {
+    display: flex;
+    flex-direction: @dir;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+//button mixin
+.btn-styles(@bgcolor, @color) {
+    background-color: @bgcolor;
+    padding: 10px 20px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: @color;
+}
+
+//button animation
+.btn-animation(@start, @end)    {
+    
+}
